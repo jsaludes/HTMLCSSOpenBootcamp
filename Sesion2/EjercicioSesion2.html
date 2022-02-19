@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Sesión 2</title>
+</head>
+<body>
+
+    <form id= "formulario1" action="formularioenviado.html" method="post" style="border: 2px #000 solid; margin: 30px; padding: 30px;background-color:lightskyblue;">
+    
+    <h2>Bienvenid@! Este es el formulario de la sesión 2</h2>
+    
+    <fieldset>
+        <legend>Introduce tus datos de contacto:</legend>
+
+        <div> 
+            <input id="formulario1_nombre" name="nombre" placeholder="Nombre"><p></p>
+
+            <input type="text" name="apellido" placeholder="Apellido"><p></p>
+
+            <input type="email" name="email" placeholder="Correo electrónico"><p></p>
+ 
+            <input type="tel" name="telefono" placeholder="Teléfono móvil"><p></p>
+            
+            <input type="text" name="direccion" placeholder="Dirección"><p></p>
+
+            <input type="checkbox" name="checkbox" required>He cumplimentado los datos solicitados
+
+            <p><input type="submit" name="botonenviar" value="Enviar"></p>
+        </div>
+
+    </fieldset>
+</form>
+
+    <h2>Esta es la tabla de la sesión 2</h2>
+
+    <!-- Con TR se define la fila. Con TD las celdas de cada fila. Si en lugar de TD se emplea TH el texto se mostrará 
+    en negrita. -->
+
+    <table border="1px">
+        <tr>
+        <th>Fila/Columna</th>
+        <th>Columna 1</th>
+        <th colspan="2">Columna 2</th>
+        </tr>
+        <tr>
+        <th>Fila 1</th>
+        <td colspan="2" style="text-align: center;">Celda 1</td>
+        <td>Celda 2</td>
+        </tr>
+        <tr>
+        <th>Fila 2</th>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        <td>Celda 3</td>
+        </tr>
+        <tr>
+        <th>Fila 3</th>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        <td>Celda 3</td>
+        </tr>    
+    </table>
+    
+
+</body>
+
+
+
+</html>
