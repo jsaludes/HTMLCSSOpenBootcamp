@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Sesion8/css/bootstrap.css">
+    <link rel="stylesheet" href="/Sesion8/css/animate.css">
+    <script src="/Sesion8/js/bootstrapbundle.js"></script>
+    <title>Ejercicio Sesión 8</title>
+</head>
+<body>
+
+    <h1 class="animate__animated animate__backInUp animate__delay-1s">Este es un elemento animado</h1>
+
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip arriba">
+        Tooltip arriba
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip abajo">
+        Tooltip abajo
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip derecha">
+        Tooltip derecha
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip izquierda">
+        Tooltip izquierda
+      </button>
+    
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
+
+</body>
+</html>
