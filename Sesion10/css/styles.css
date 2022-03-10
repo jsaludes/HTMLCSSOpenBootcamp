@@ -1,0 +1,33 @@
+html{
+    text-align: center;
+}
+.container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#rojoaverde{
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    margin: 0px auto;
+}
+@media (max-width: 700px){
+    #rojoaverde {
+        background-color: green;
+    }
+}
+#videoaimagen{
+    margin: 0px auto;
+}
+video{
+    width: 100%;
+    max-width: 1000px;
+
+}
+@media (max-width: 700px){
+    #videoaimagen {
+        content: url(/Sesion10/img/gatitofoto.jpg);
+        max-width: 1000px;
+    }
+}
